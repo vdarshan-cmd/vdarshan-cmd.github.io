@@ -148,6 +148,20 @@
     font-size:.88rem;
     text-align:center;
   }
+  .preview-img-wrap{
+    margin-top:18px;
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+    max-height:360px;
+  }
+  .preview-img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    object-position:top;
+  }
 
   .research-list{
     display:grid;
@@ -209,8 +223,8 @@
       <div class="actions">
         <a class="btn" href="https://investment-tracker-demo.vercel.app" target="_blank" rel="noopener">View live demo →</a>
       </div>
-      <div class="preview-card">
-        Live, interactive demo — screenshot preview coming soon.
+      <div class="preview-img-wrap">
+        <img class="preview-img" alt="Investments Dashboard — Today view (demo data)" src="investments-preview.webp">
       </div>
     </div>
   </div>
