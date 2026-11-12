@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Darshan — Investment Research & Portfolio Analysis</title>
+<meta name="description" content="Portfolio of Vishal Darshan, finance graduate focused on investment research and portfolio analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a2342;
+    --navy-light:#1b3a63;
+    --ink:#1a1f26;
+    --mut:#5b6472;
+    --line:#e3e7ec;
+    --bg:#ffffff;
+    --bg-soft:#f7f9fb;
+    --maxw:860px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:'Lora',Georgia,'Times New Roman',serif;
+    color:var(--navy);
+    margin:0;
+  }
+  a{color:var(--navy);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  header.hero{
+    padding:72px 0 48px;
+    border-bottom:1px solid var(--line);
+  }
+  header.hero h1{font-size:2.3rem;font-weight:700;letter-spacing:.2px;}
+  header.hero .tagline{
+    margin-top:10px;
+    font-size:1.08rem;
+    color:var(--mut);
+  }
+  header.hero .links{
+    margin-top:22px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  header.hero .links a{
+    font-weight:600;
+    font-size:.95rem;
+    padding:9px 16px;
+    border:1px solid var(--navy);
+    border-radius:4px;
+    color:var(--navy);
+  }
+  header.hero .links a.primary{
+    background:var(--navy);
+    color:#fff;
+  }
+  header.hero .links a.primary:hover{
+    background:var(--navy-light);
+    text-decoration:none;
+  }
+  header.hero .links a:not(.primary):hover{
+    background:var(--bg-soft);
+    text-decoration:none;
+  }
+
+  section{
+    padding:48px 0;
+    border-bottom:1px solid var(--line);
+  }
+  section:last-of-type{border-bottom:none;}
+  section h2{
+    font-size:1.5rem;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  section .section-sub{
+    color:var(--mut);
+    font-size:.92rem;
+    margin-bottom:24px;
+  }
+
+  .project-card{
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:28px;
+  }
+  .project-card h3{
+    font-size:1.15rem;
+    margin-bottom:10px;
+  }
+  .project-card p{
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .project-card .actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .btn{
+    display:inline-block;
+    font-weight:600;
+    font-size:.92rem;
+    padding:10px 18px;
+    border-radius:4px;
+    background:var(--navy);
+    color:#fff;
+    border:1px solid var(--navy);
+  }
+  .btn:hover{background:var(--navy-light);text-decoration:none;}
+  .btn.secondary{
+    background:transparent;
+    color:var(--navy);
+  }
+  .btn.secondary:hover{background:#eef2f6;}
+  .btn.disabled{
+    background:#eceff2;
+    color:var(--mut);
+    border-color:var(--line);
+    cursor:default;
+    pointer-events:none;
+  }
+  .note{
+    font-size:.85rem;
+    color:var(--mut);
+    margin-top:12px;
+  }
+  .preview-card{
+    margin-top:18px;
+    border:1px dashed var(--line);
+    border-radius:6px;
+    padding:20px;
+    background:#fff;
+    color:var(--mut);
+    font-size:.88rem;
+    text-align:center;
+  }
+
+  .research-list{
+    display:grid;
+    gap:14px;
+  }
+  .research-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:16px 20px;
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:6px;
+    flex-wrap:wrap;
+  }
+  .research-item .title{font-weight:500;}
+  .research-item .title small{
+    display:block;
+    color:var(--mut);
+    font-size:.82rem;
+    margin-top:2px;
+  }
+
+  footer{
+    padding:32px 0 56px;
+    color:var(--mut);
+    font-size:.85rem;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding:48px 0 36px;}
+    header.hero h1{font-size:1.8rem;}
+    section{padding:36px 0;}
+    .research-item{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Vishal Darshan</h1>
+    <p class="tagline">Finance graduate focused on investment research and portfolio analysis.</p>
+    <div class="links">
+      <a class="primary" href="https://www.linkedin.com/in/vishal-darshan-6595691b5/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:vdarshan@fordham.edu">vdarshan@fordham.edu</a>
+    </div>
+  </div>
+</header>
+
+<section id="investments">
+  <div class="wrap">
+    <h2>Investments Dashboard</h2>
+    <p class="section-sub">Portfolio tracking &amp; analytics platform</p>
+    <div class="project-card">
+      <h3>Investments Dashboard</h3>
+      <p>Consolidates equity, options, and crypto data; automates performance tracking, trade analytics, and portfolio health checks with built-in AI research tools.</p>
+      <div class="actions">
+        <a class="btn" href="https://investment-tracker-demo.vercel.app" target="_blank" rel="noopener">View live demo →</a>
+      </div>
+      <div class="preview-card">
+        Live, interactive demo — screenshot preview coming soon.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="budget">
+  <div class="wrap">
+    <h2>Personal Finance Tracker</h2>
+    <p class="section-sub">Spending, debt &amp; financial health tracking</p>
+    <div class="project-card">
+      <h3>Personal Finance Tracker</h3>
+      <p>Tracks spending, debt, subscriptions, and savings across accounts, with a financial health score and natural-language queries over spending history.</p>
+      <div class="actions">
+        <span class="btn disabled">Live demo link coming soon</span>
+      </div>
+      <p class="note">Demo link to be added once the deployment is stable.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>Research Samples</h2>
+    <p class="section-sub">PDF reports — click once added to <code>/docs</code></p>
+    <div class="research-list">
+      <div class="research-item">
+        <span class="title">GM Equity Research Report<small>Full equity research report</small></span>
+        <a class="btn secondary" href="docs/gm-equity-research-report.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="research-item">
+        <span class="title">GM One-Page Thesis<small>Condensed investment thesis</small></span>
+        <a class="btn secondary" href="docs/gm-one-page-thesis.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="research-item">
+        <span class="title">Value Investing Club — Sector Report<small>Sector-level research report</small></span>
+        <a class="btn secondary" href="docs/vic-sector-report.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+      <div class="research-item">
+        <span class="title">Endowment Hedge Fund Manager Selection<small>My section of the group project</small></span>
+        <a class="btn secondary" href="docs/endowment-hedge-fund-manager-selection.pdf" target="_blank" rel="noopener">View PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Vishal Darshan &copy; 2026
+  </div>
+</footer>
+
+</body>
+</html>
